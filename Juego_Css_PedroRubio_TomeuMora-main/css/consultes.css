@@ -1,0 +1,26 @@
+/* Contenedor para centrar los elementos */
+.center-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Estilo de las tablas */
+.TaulaJoc, table {
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+.TaulaJoc td, table td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Asegura que los h2 estén centrados */
+.center-content h2 {
+    margin-bottom: 10px;
+}

@@ -1,0 +1,68 @@
+@import 'comun.css';
+
+body {
+    background-color: lightyellow;
+}
+
+header {
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+}
+
+ul li a {
+    background-color: #333;
+}
+
+ul li a:hover {
+    background-color: #ff9a9e;
+}
+
+#logout {
+    background-color: #e74c3c;
+}
+
+#logout:hover {
+    background-color: #c0392b;
+}
+
+#TaulaJoc {
+    width: 100%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
+    border-collapse: collapse;
+    text-align: center;
+}
+
+#TaulaJoc td {
+    padding: 1rem;
+    border: 1px solid #333;
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+#TaulaJoc td:hover {
+    background-color: #8dff3b;
+}
+
+@media (min-width: 768px) {
+    #TaulaJoc {
+        width: 60%;
+    }
+}
+ol {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0;
+    list-style-position: inside;
+}
+
+ol ol {
+    padding-left: 0;
+}
+.logo {
+    width: 50px;
+    height: 50px;
+}

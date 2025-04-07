@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="cat">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alta Sopa de Lletres</title>
+    <link rel="stylesheet" href="../css/admin2.css">
+    <link rel="icon" href="../imagenes/icons8-star-30.png" type="image/x-icon">
+
+</head>
+
+<body>
+    <header>
+        
+        <img src="../imagenes/logo.webp" alt="Logo" class="logo">
+        <h1>Alta Sopa de Lletres</h1>
+    </header>
+    <ul>
+        <li><a href="admin_wordSearch.html">Login</a></li>
+        <li><a href="consultaUsuaris.html">Usuaris</a></li>
+        <li><a href="baixaUsuaris.html">Baixa usuari</a></li>
+        <li><a href="altaSopa.html">Alta sopa</a></li>
+        <li><a href="baixaSopa.html">Baixa sopa</a></li>
+        <li><a href="consultaSopa.html">Consulta sopa de lletres</a></li>
+        <li><a href="consultaResultatSopa.html">Consulta resultats sopa de lletres</a></li>
+        <li><a href="consultaMillors.html">Consulta de millors resultats</a></li>
+        <li><a href="ajudaAdmin.html">Ajuda</a></li>
+    </ul>
+    <form action="processar_info.php" method="post">
+        <input type="button" name="logout" id="logout" value="Logout">
+    </form>
+
+    <form action="../php/sopalletra.php" method="post" id="form1">
+      
+        <label for="nomSopa">Nom Sopa de Lletres:</label>
+        <input type="text" id="nomSopa" name="nomSopa"><br>
+    
+       
+        <label>Nivell de Dificultat:</label><br>
+        <input type="radio" id="facil" name="dificultatSopa" value="Fácil">
+        <label>Fàcil</label><br>
+
+        <input type="radio" id="medio" name="dificultatSopa" value="Medio">
+        <label>Mitjà</label><br>
+
+        <input type="radio" id="dificil" name="dificultatSopa" value="Fácil">
+        <label>Difícil</label><br>
+        <br>
+
+       
+        <label for="paraula[]">Insereix les paraules:</label><br>     
+        <input name="paraula[]" type="text" placeholder="Paraula 1"><br>
+        <input name="paraula[]" type="text" placeholder="Paraula 2"><br>
+        <input name="paraula[]" type="text" placeholder="Paraula 3"><br>
+        <input name="paraula[]" type="text" placeholder="Paraula 4"><br>
+        <input name="paraula[]" type="text" placeholder="Paraula 5"><br>
+        <input name="paraula[]" type="text" placeholder="Paraula 6"><br>
+        <input name="paraula[]" type="text" placeholder="Paraula 7"><br>
+        <input name="paraula[]" type="text" placeholder="Paraula 8"><br>
+        <input name="paraula[]" type="text" placeholder="Paraula 9"><br>
+        <input name="paraula[]" type="text" placeholder="Paraula 10"><br>
+        <br>
+
+       
+        <label>Lletres per col·locar:</label><br>       
+        <input type="button" value="A">
+        <input type="button" value="B">
+        <input type="button" value="C">
+        <input type="button" value="D">
+        <input type="button" value="E">
+        <input type="button" value="F">
+        <input type="button" value="G">
+        <input type="button" value="H">
+        <input type="button" value="I">
+        <input type="button" value="J">
+        <input type="button" value="K">
+        <input type="button" value="L">
+        <input type="button" value="M">
+        <input type="button" value="N">
+        <input type="button" value="O">
+        <input type="button" value="P">
+        <input type="button" value="Q">
+        <input type="button" value="R">
+        <input type="button" value="S">
+        <input type="button" value="T">
+        <input type="button" value="U">
+        <input type="button" value="V">
+        <input type="button" value="W">
+        <input type="button" value="X">
+        <input type="button" value="Y">
+        <input type="button" value="Z">
+        
+        <br>
+        <br>
+        
+    </form>
+
+    
+    <table class="TaulaJoc">
+
+        <tr>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+        </tr>
+        <tr>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+        </tr>
+        <tr>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+        </tr>
+        <tr>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+        </tr>
+        <tr>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+        </tr>
+        <tr>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+        </tr>
+        <tr>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+        </tr>
+        <tr>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+        </tr>
+        <tr>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+        </tr>
+        <tr>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td> 
+            <td>X</td> 
+            <td>X</td> 
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+        </tr>
+    </table><br>
+    <form action="processar_info.php" method="post">
+    <input type="button" value="Emplenar" form="form1">
+    <input type="reset" form="form1" value="Restableix">
+    <input type="submit" form="form1" value="Desa">
+    
+</form>    
+    
+    
+<footer>Xarxes Socials:<br>
+    <a href="https://instagram.com">
+        <img src="../imagenes/instagram.png" height="50" width="90" alt="404 not found">
+    </a>
+    <a href="https://x.com">
+        <img src="../imagenes/tw.png" height="50" width="70" alt="404 not found">
+    </a>
+    <a href="https://facebook.com">
+        <img src="../imagenes/facebook.png" height="50" width="70" alt="404 not found">
+    </a><br>
+    Correo electrónico:
+    <a href="mailto:correu@exemple"><p>correu@exemple</p></a>
+</footer>
+
+</body>
+</html>

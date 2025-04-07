@@ -1,0 +1,175 @@
+/* Estils globals per marges, padding i box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Estil bàsic per al cos de la página */
+body {
+    background-color: rgb(205, 205, 158);
+    color: #5c5c5c;
+}
+
+/* Encapçalat principal amb estil centrat */
+header h1 {
+    color: rgb(206, 0, 0); /* Color destacat per al títol */
+}
+
+
+/* Llista no ordenada*/
+ul {
+    background-color: rgb(205, 205, 158);
+}
+
+ul li {
+    margin: 0 1rem;
+}
+
+/* Enllaços amb estil de botons */
+ul li a {
+    background-color: #7b7b7b; 
+}
+
+ul li a:hover {
+    background-color: #575757;
+}
+
+/* Botó de logout amb estil */
+#logout {
+    display: block;
+    margin: 1rem auto;
+    padding: 0.5rem 1rem;
+    background-color: #ff1900; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+#logout:hover {
+    background-color: #c0392b;
+}
+
+/* Estil del formulari per centrar-lo */
+form {
+    width: 100%;
+    max-width: 500px; /* Limita l'amplada */
+    margin: 1rem auto; 
+    padding: 0.7rem; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    background-color: rgb(237, 237, 205); 
+}
+
+form label {
+    display: block; 
+    font-weight: bold; 
+    margin-bottom: 0.5rem; 
+}
+
+/* Estil per a diversos tipus d'inputs */
+form input[type="tel"],
+form input[type="email"],
+form input[type="text"],
+form input[type="password"],
+form input[type="date"],
+form input[type="number"] {
+    width: 100%; 
+    padding: 0.3rem;
+    margin-bottom: 0.2rem; 
+    border: 1px solid #ccc; 
+    border-radius: 7px; 
+}
+
+form select {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 0.7rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Botons dins el formulari */
+form input[type="submit"],
+form button {
+    width: 100%; 
+    padding: 0.5rem; 
+    background-color: #4CAF50; 
+    color: white;
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+}
+
+form input[type="submit"]:hover,
+form button:hover {
+    background-color: #1a9e21; 
+}
+
+/* Article amb imatges centrades */
+article {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+article img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+}
+
+article h3 {
+    margin-top: 0.5rem;
+    color: #333;
+}
+
+/* Taula amb estil simple i interactiu */
+.TaulaJoc {
+    width: 60%;
+    margin: 1rem auto;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.TaulaJoc td {
+    width: 2rem;
+    height: 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border: 1px solid #333;
+    background-color: #f4f4f4;
+    transition: background-color 0.3s ease; /* Efecte visual en passar el cursor */
+}
+
+footer {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem ;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+}
+
+footer ul li a {
+    color:white;
+}
+
+footer a {
+    color: #333;
+}
