@@ -25,6 +25,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
         echo "No se ha seleccionado ninguna sopa.";
     }
+
 } else {
     echo "El formulario no se ha enviado.";
 }
