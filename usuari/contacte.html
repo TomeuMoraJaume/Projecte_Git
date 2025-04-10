@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="cat">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacte</title>
+    <link rel="stylesheet" href="../css/usuari_nou.css">
+    <link rel="icon" href="../imagenes/close-envelope_icon-icons.webp" type="image/x-icon">
+
+</head>
+<body>
+    <header>
+        <img src="../imagenes/logo.webp" alt="Logo" class="logo">
+        <h1>Contacte</h1>
+    </header>
+    
+        <ul>
+      
+            <li><a href="wordSearch.html">Inici</a></li>
+            <li><a href="alta_usuari.html">Alta Usuari</a></li>
+            <li><a href="joc.html">Joc</a></li>
+            <li><a href="consultaPunts.html">Consulta Punts</a></li>
+            <li><a href="ajuda.html">Ajuda</a></li>
+            <li><a href="mapa.html">Mapa</a></li>
+            <li><a href="contacte.html">Contacte</a></li>
+            <li><a href="configuracio.html">Configuració</a></li>           
+
+        </ul>
+
+
+        <form action="processar_info.php" method="post">
+            <input type="button" name="logout" id="logout" value="Logout">
+        </form>
+        
+        <ul>
+            <li><a href="usuari1.html">Usuari 1 amb mes puntuació</a></li>
+            <li><a href="usuari2.html">Usuari 2 amb mes puntuació</a></li>
+            <li><a href="usuari3.html">Usuari 3 amb mes puntuació</a></li>
+        </ul>
+        
+    
+    <main>
+        <h2>Contacte</h2>
+
+        <form action="../php/contacte.php" method="POST">
+            <table>
+                <tr>
+                    <td><label for="name">Nom:</label></td>
+                    <td><input type="text" id="name" name="name" required></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Correu Electrònic:</label></td>
+                    <td><input type="email" id="email" name="email" required></td>
+                </tr>
+                <tr>
+                    <td><label for="type">Tipus:</label></td>
+                    <td>
+                        <select id="type" name="type" required>
+                            <option value="CONSULTA">Consulta</option>  
+                            <option value="ERROR">Error</option>
+                            <option value="MILLORA">Millora</option>
+                            <option value="SUBSCRIBE">Subscribe</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="phone">Telèfon:</label></td>
+                    <td><input type="tel" id="phone" name="phone" required></td>
+                </tr>
+                <tr>
+                    <td><label for="birthday">Data de Naixement:</label></td>
+                    <td><input type="date" id="birthday" name="birthday"></td>
+                </tr>
+                <tr>
+                    <td><label for="message">Missatge:</label></td>
+                    <td><textarea id="message" name="message" required></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="submit"></input>
+                    </td>
+                </tr>
+            </table>
+        </form>
+        
+    </main>
+
+    
+    <footer>
+        <p>Segueix-nos a les xarxes socials:</p>
+        <ul>
+            <li><a href="https://www.instagram.com/">Instagram</a></li>
+            <li><a href="https://www.facebook.com/">Facebook</a></li>
+            <li><a href="https://twitter.com/">Twitter</a></li>
+
+        </ul>
+
+        <a href="mailto:correu@exemple.com">correu@exemple.com</a>
+        
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="cat">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Principal</title>
+    <link rel="stylesheet" href="../css/usuari_nou.css">
+    <link rel="stylesheet" href="../css/inici.css">
+    <link rel="icon" href="../imagenes/icons8-star-30.png" type="image/x-icon">
+
+</head>
+<body>
+
+    <header>
+        <img src="../imagenes/logo.webp" alt="Logo" class="logo">
+        <h1>Pagina Principal &#128210;</h1>
+    </header>
+
+        <ul>
+
+            <li><a href="wordSearch.html">Inici</a></li>
+            <li><a href="alta_usuari.html">Alta Usuari</a></li>
+            <li><a href="joc.html">Joc</a></li>
+            <li><a href="consultaPunts.html">Consulta Punts</a></li>
+            <li><a href="ajuda.html">Ajuda</a></li>
+            <li><a href="mapa.html">Mapa</a></li>
+            <li><a href="contacte.html">Contacte</a></li>
+            <li><a href="configuracio.html">Configuració</a></li> 
+              
+        </ul>
+
+
+            <form action="processar_info.php" method="post">
+                <input type="button" name="logout" id="logout" value="Logout">
+            </form>
+
+
+            <ul>
+                <li><a href="usuari1.html">Usuari 1 amb mes puntuació</a></li>
+                <li><a href="usuari2.html">Usuari 2 amb mes puntuació</a></li>
+                <li><a href="usuari3.html">Usuari 3 amb mes puntuació</a></li>
+            </ul>
+    
+
+            <form action="../php/loguin.php" method="post">
+                <table>
+                    <tr>
+                        <td><label for="username">Nom de usuari:</label></td>
+                        <td><input type="text" id="username" name="username"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="password">Contrasenya:</label></td>
+                        <td><input type="password" id="password" name="password"></td>
+                    </tr>
+                </table>
+                <input type="submit" value="Iniciar Sessió">
+            </form>
+            
+
+    <h2>Articles</h2>
+
+  
+    <div class="articles-container">
+    <article><a href="https://www.cartv.es/sala-de-prensa/esta-semana-mas-sopa-de-letras"><img src="../imagenes/prensa-cartv-mas-sopa-de-letras.webp" alt="" height="250"> <h3>Esta semana, más 'Sopa de Letras'</h3></a></article>
+    <article><a href="https://www.extradigital.es/aragon-tv-busca-concursantes-para-sopa-de-letras/"><img src="../imagenes/aragon-tv-sopa-de-letras.jpg" alt="" height="250"><h3>Aragón TV busca concursantes para 'Sopa de letras'</h3></a></article>
+    </div>
+
+    </tr>
+    </table>
+
+    <footer>
+        <p>Segueix-nos a les xarxes socials:</p>
+        <ul>
+            <li><a href="https://www.instagram.com/">Instagram</a></li>
+            <li><a href="https://www.facebook.com/">Facebook</a></li>
+            <li><a href="https://twitter.com/">Twitter</a></li>
+        </ul>
+        <a href="mailto:correu@exemple.com">correu@exemple.com</a>
+    </footer>
+
+
+
+
+</body>
+</html>

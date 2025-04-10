@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="cat">
+<head>
+    <meta charset="UTF-8">
+    <title>Sopa de Lletres - Jugar</title>
+    <link rel="stylesheet" href="../css/usuari_nou.css">
+    <link rel="icon" href="../imagenes/icons8-star-30.png" type="image/x-icon">
+
+</head>
+<body>
+
+    <header>
+        <img src="../imagenes/logo.webp" alt="Logo" class="logo">
+        <h1>Sopa de Lletres - Jugador&#127942;</h1>
+    </header>
+    
+    <ul>
+
+        <li><a href="wordSearch.html">Inici</a></li>
+        <li><a href="alta_usuari.html">Alta Usuari</a></li>
+        <li><a href="joc.html">Joc</a></li>
+        <li><a href="consultaPunts.html">Consulta Punts</a></li>
+        <li><a href="ajuda.html">Ajuda</a></li>
+        <li><a href="mapa.html">Mapa</a></li>
+        <li><a href="contacte.html">Contacte</a></li>
+        <li><a href="configuracio.html">Configuració</a></li>
+        
+        </ul>
+
+
+        <form action="processar_info.php" method="post">
+            <input type="button" name="logout" id="logout" value="Logout">
+        </form>
+        
+        <ul>
+            <li><a href="usuari1.html">Usuari 1 amb mes puntuació</a></li>
+            <li><a href="usuari2.html">Usuari 2 amb mes puntuació</a></li>
+            <li><a href="usuari3.html">Usuari 3 amb mes puntuació</a></li>
+        </ul>
+    
+    <h2>Selecciona una Sopa de Lletres</h2>
+
+    <form action="../php/joc.php" method="POST">
+        <label for="sopaSelect">Sopa de lletres:</label>
+        <select id="sopaSelect" name="sopaSelect">
+            <option >Sopa 1</option>
+            <option >Sopa 2</option>
+            <option >Sopa 3</option>
+            <option >Sopa 3</option>
+            <option >Sopa 3</option>
+        </select>
+        <input type="submit"></input>
+    </form>
+    
+    <h2>Paraules a Trobar</h2>
+    
+    <ul>
+
+        <li>Paraula1</li>
+        <li>Paraula2</li>
+        <li>Paraula3</li>
+
+    </ul>
+    
+    <h2>Taula de la Sopa de Lletres</h2>
+
+    <table id="TaulaJoc">
+
+        <tr>
+            <td>R</td>
+            <td>T</td>
+            <td>Y</td>
+            <td>L</td>
+            <td>K</td>
+            <td>M</td>
+            <td>Q</td>
+            <td>P</td>
+            <td>A</td>
+            <td>Z</td>
+        </tr>
+        <tr>
+            <td>W</td>
+            <td>E</td>
+            <td>X</td>
+            <td>C</td>
+            <td>V</td>
+            <td>B</td>
+            <td>N</td>
+            <td>D</td>
+            <td>H</td>
+            <td>J</td>
+        </tr>
+        <tr>
+            <td>T</td>
+            <td>U</td>
+            <td>I</td>
+            <td>O</td>
+            <td>P</td>
+            <td>A</td>
+            <td>S</td>
+            <td>F</td>
+            <td>G</td>
+            <td>L</td>
+        </tr>
+        <tr>
+            <td>M</td>
+            <td>N</td>
+            <td>O</td>
+            <td>Q</td>
+            <td>R</td>
+            <td>T</td>
+            <td>E</td>
+            <td>W</td>
+            <td>X</td>
+            <td>Y</td>
+        </tr>
+        <tr>
+            <td>B</td>
+            <td>C</td>
+            <td>D</td>
+            <td>E</td>
+            <td>F</td>
+            <td>G</td>
+            <td>H</td>
+            <td>I</td>
+            <td>J</td>
+            <td>K</td>
+        </tr>
+        <tr>
+            <td>Q</td>
+            <td>A</td>
+            <td>Z</td>
+            <td>S</td>
+            <td>X</td>
+            <td>C</td>
+            <td>V</td>
+            <td>B</td>
+            <td>N</td>
+            <td>M</td>
+        </tr>
+        <tr>
+            <td>H</td>
+            <td>J</td>
+            <td>K</td>
+            <td>L</td>
+            <td>M</td>
+            <td>P</td>
+            <td>Q</td>
+            <td>R</td>
+            <td>T</td>
+            <td>U</td>
+        </tr>
+        <tr>
+            <td>F</td>
+            <td>D</td>
+            <td>S</td>
+            <td>A</td>
+            <td>Z</td>
+            <td>E</td>
+            <td>W</td>
+            <td>Q</td>
+            <td>X</td>
+            <td>Y</td>
+        </tr>
+        <tr>
+            <td>J</td>
+            <td>M</td>
+            <td>N</td>
+            <td>O</td>
+            <td>P</td>
+            <td>R</td>
+            <td>T</td>
+            <td>Y</td>
+            <td>U</td>
+            <td>I</td>
+        </tr>
+        <tr>
+            <td>L</td>
+            <td>K</td>
+            <td>J</td>
+            <td>H</td>
+            <td>G</td>
+            <td>F</td>
+            <td>E</td>
+            <td>D</td>
+            <td>C</td>
+            <td>B</td>
+        </tr>
+    </table>
+
+    <h2>Temps Restant</h2>
+
+    <form>
+        <table>
+            <tr>
+                <td><label for="temps">Temps:</label></td>
+                <td><input type="text" id="temps" value="60"></td>
+            </tr>
+            <tr>
+                <td><label for="resultat">Resultat:</label></td>
+                <td><input type="text" id="resultat" value="0"></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <input type="submit" id="finalitzar"></input>
+                </td>
+            </tr>
+        </table>
+    </form>
+    
+
+
+       
+    <footer>
+        <p>Segueix-nos a les xarxes socials:</p>
+        <a href="https://instagram.com">Instragram</a>
+        <a href="https://facebook.com">Facebook</a>
+        <a href="https://twitter.com">Twitter</a>
+        <p>Contacte: <a href="mailto:correu@exemple.com">correu@exemple.com</a>
+        </p>
+    </footer>
+</body>
+</html>
