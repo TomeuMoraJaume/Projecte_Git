@@ -6,6 +6,7 @@
     <title>Baixa de Usuaris</title>
     <link rel="stylesheet" href="../css/admin2.css">
     <link rel="icon" href="../imagenes/personita.png" type="image/x-icon">
+   
 
 </head>
 
@@ -32,16 +33,12 @@
     <form action="processar_info.php" method="post">
         <input type="button" name="logout" id="logout" value="Logout">
     </form>
-    <form method="post">
+    <form id="eliminar">
         <label for="nomUsuaris">Nombre de usuario</label>
-        <select id="nomUsuaris" name="nomUsuaris">
-            <option>usuari1</option>
-            <option>usuari2</option>
-            <option>usuari3</option>
-        </select><br>
-        <input type="submit" value="Borrar">
+        <select id="nomUsuaris" name="nomUsuaris"></select><br>
+        <input id="eliminar" type="submit" value="Borrar">
     </form><br>
-       
+    
 
     <footer>Xarxes Socials:<br>
         <a href="https://instagram.com">
@@ -56,6 +53,7 @@
         Correo electrónico:
         <a href="mailto:correu@exemple"><p>correu@exemple</p></a>
     </footer>
+    <script src="../Js/baixaUsuari.js"></script>
 
 </body>
 </html>
