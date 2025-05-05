@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="cat">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alta Usuari</title>
+    <link rel="stylesheet" href="../css/usuari_nou.css">
+    <link rel="icon" href="../imagenes/personita.png" type="image/x-icon">
+
+</head>
+<body>
+
+    <header>
+        <img src="../imagenes/logo.webp" alt="Logo" class="logo">
+        <h1>Registrar-se com a Usuari&#128375;</h1>
+
+    </header>
+
+            <ul>
+
+                <li><a href="wordSearch.html">Inici</a></li>
+                <li><a href="alta_usuari.html">Alta Usuari</a></li>
+                <li><a href="joc.html">Joc</a></li>
+                <li><a href="consultaPunts.html">Consulta Punts</a></li>
+                <li><a href="ajuda.html">Ajuda</a></li>
+                <li><a href="mapa.html">Mapa</a></li>
+                <li><a href="contacte.html">Contacte</a></li>
+                <li><a href="configuracio.html">Configuració</a></li>
+           
+            </ul>
+
+
+            <form action="processar_info.php" method="post">
+                <input type="button" name="logout" id="logout" value="Logout">
+            </form>
+            
+            <ul>
+                <li><a href="usuari1.html">Usuari 1 amb mes puntuació</a></li>
+                <li><a href="usuari2.html">Usuari 2 amb mes puntuació</a></li>
+                <li><a href="usuari3.html">Usuari 3 amb mes puntuació</a></li>
+            </ul>
+        
+    
+    
+
+        <form method="POST">
+             <table>
+                <tr>
+                    <td><label for="nomUsuari">Nom d'Usuari:</label></td>
+                    <td><input type="text" id="nomUsuari" name="nomUsuari" required></td>
+                </tr>
+                <tr>
+                    <td><label for="contrasenya">Contrasenya:</label></td>
+                    <td><input type="password" id="contrasenya" name="contrasenya" required></td>
+                </tr>
+                <tr>
+                    <td><label for="nom">Nom:</label></td>
+                    <td><input type="text" id="nom" name="nom" required></td>
+                </tr>
+                <tr>
+                    <td><label for="llinatge1">Llinatge 1:</label></td>
+                    <td><input type="text" id="llinatge1" name="llinatges" required></td>
+                </tr>
+                 <tr>
+                     <td><label for="llinatge2">Llinatge 2:</label></td>
+                     <td><input type="text" id="llinatge2" name="llinatges" required></td>
+                 </tr>
+                <tr>
+                    <td><label for="correu">Correu Electrònic:</label></td>
+                    <td><input type="email" id="correu" name="correu" required></td>
+                </tr>
+                <tr>
+                    <td><label for="dataNaixement">Data de Naixement:</label></td>
+                    <td><input type="date" id="dataNaixement" name="dataNaixement"></td>
+                </tr>
+            </table>
+            <input type="submit"></input>
+        </form>
+
+    <footer>
+        <p>Segueix-nos a les xarxes socials:</p>
+        <ul>
+            <li><a href="https://www.instagram.com/">Instagram</a></li>
+            <li><a href="https://www.facebook.com/">Facebook</a></li>
+            <li><a href="https://twitter.com/">Twitter</a></li>
+        </ul>
+        <a href="mailto:elcorreoquequieres@correo.com">Enviar un correo</a>
+    </footer>
+<script src="../Js/inserts.js"></script>
+
+</body>
+</html>

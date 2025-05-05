@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="cat">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configuració</title>
+    <link rel="stylesheet" href="../css/usuari_nou.css">
+    <link rel="icon" href="../imagenes/icons8-star-30.png" type="image/x-icon">
+
+</head>
+<body>
+    <header>
+        <img src="../imagenes/logo.webp" alt="Logo" class="logo">
+        <h1>Configuració&#9881;</h1>
+    </header>
+
+            <ul>
+
+            <li><a href="wordSearch.html">Inici</a></li>
+            <li><a href="alta_usuari.html">Alta Usuari</a></li>
+            <li><a href="joc.html">Joc</a></li>
+            <li><a href="consultaPunts.html">Consulta Punts</a></li>
+            <li><a href="ajuda.html">Ajuda</a></li>
+            <li><a href="mapa.html">Mapa</a></li>
+            <li><a href="contacte.html">Contacte</a></li>
+            <li><a href="configuracio.html">Configuració</a></li>
+            
+            </ul>
+
+
+            <form action="processar_info.php" method="post">
+                <input type="button" name="logout" id="logout" value="Logout">
+            </form>
+            
+            <ul>
+                <li><a href="usuari1.html">Usuari 1 amb mes puntuació</a></li>
+                <li><a href="usuari2.html">Usuari 2 amb mes puntuació</a></li>
+                <li><a href="usuari3.html">Usuari 3 amb mes puntuació</a></li>
+            </ul>
+
+    
+
+        <main>
+            <h2>Opcions de Configuració</h2>
+            <form action="../php/config.php" method="POST">
+                <label for="idioma">Idioma de la web:</label>
+                <select id="idioma" name="idioma">
+                    <option value="catala">Català</option>
+                    <option value="castella">Castellà</option>
+                    <option value="angles">Anglès</option>
+                </select>
+                <br><br>
+                <label for="colorTaula">Color de les taules:</label>
+                <select id="colorTaula" name="colorTaula">
+                    <option value="blanc">Blanc</option>
+                    <option value="gris">Gris</option>
+                    <option value="beige">Beige</option>
+                </select>
+                <br><br>
+                <label for="colorBotons">Color dels botons:</label>
+                <select id="colorBotons" name="colorBotons">
+                    <option value="verd">Verd</option>
+                    <option value="blau">Blau</option>
+                    <option value="groc">Groc</option>
+                </select>
+                <br><br>
+                <input type="submit"></input>
+            </form>
+        </main>
+        
+    <footer>
+
+            <p>Segueix-nos a les xarxes socials:</p>
+            <a href="https://instagram.com">Instragram</a>
+            <a href="https://facebook.com">Facebook</a>
+            <a href="https://twitter.com">Twitter</a>
+            <p>Contacte: <a href="mailto:correu@exemple.com">correu@exemple.com</a></p>
+
+    </footer>
+
+</body>
+</html>
