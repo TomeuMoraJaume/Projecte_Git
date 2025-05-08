@@ -40,25 +40,16 @@
     
     <h2>Selecciona una Sopa de Lletres</h2>
 
-    <form action="../php/joc.php" method="POST">
+    <form id="SelectSopaDeLetras">
         <label for="sopaSelect">Sopa de lletres:</label>
-        <select id="sopaSelect" name="sopaSelect">
-            <option >Sopa 1</option>
-            <option >Sopa 2</option>
-            <option >Sopa 3</option>
-            <option >Sopa 3</option>
-            <option >Sopa 3</option>
-        </select>
+        <select id="sopaSelect" name="sopaSelect"></select>
+
         <input type="submit"></input>
     </form>
     
     <h2>Paraules a Trobar</h2>
     
-    <ul>
-
-        <li>Paraula1</li>
-        <li>Paraula2</li>
-        <li>Paraula3</li>
+    <ul id="listP">
 
     </ul>
     
@@ -209,7 +200,7 @@
     </form>
     
 
-
+    <script src="../Js/sopa.js"></script>
     <script src="../Js/nomUsuari.js"></script>
 
        
