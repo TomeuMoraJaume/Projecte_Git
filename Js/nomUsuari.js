@@ -12,4 +12,14 @@ window.addEventListener('DOMContentLoaded', () => {
 
         header.appendChild(span);
     }
+
+
+    const logout = document.getElementById('logout');
+
+    logout.addEventListener("click", () => {
+        console.log("logout");
+        localStorage.clear();
+        window.location.href = "wordSearch.html";
+});
+
 });
