@@ -22,17 +22,25 @@ async function validarInformacio() {
         return;
     }
 
-    const query = `Select id from Usuari where nom_login = '${info.nom_login}' and contrasenya = '${info.contrasenya}'`;
+    const query = `Select id, nom from Usuari where nom_login = '${info.nom_login}' and contrasenya = '${info.contrasenya}'`;
 
     try {
         console.log("try");
         const api = await fetch("http://localhost:3000/daw/" + encodeURIComponent(query));
         const data = await api.json();
 
+        console.log(data.data);
+
         const array_rebuda_ids = data.data.map(r => r.id);
+        const array_rebuda_nom = data.data.map(r => r.nom);
+
         if (array_rebuda_ids.length > 0) {
+            // Aquí guardamos el ID y el nombre correctamente en localStorage
             localStorage.setItem("usuariActual", array_rebuda_ids[0]);
-             window.location.href = "joc.html";
+            localStorage.setItem("nomUsuari", array_rebuda_nom[0]);
+
+            // Redirigir a otra página (ejemplo: juego)
+            window.location.href = "joc.html";
         } else {
             alert("Usuari o contrasenya incorrectes.");
         }
@@ -43,6 +51,3 @@ async function validarInformacio() {
         location.reload();
     }
 }
-
- const usuariActual = localStorage.getItem("usuariActual");
- console.log(usuariActual.nom_login); // O cualquier propiedad que tenga tu objeto usuario

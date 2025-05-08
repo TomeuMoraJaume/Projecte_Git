@@ -23,9 +23,9 @@ window.addEventListener('DOMContentLoaded', () => {
             const encodedQuery = encodeURIComponent(updateQuery);
             console.log("Encoded query URL:", encodedQuery);
             await fetch("http://localhost:3000/daw/" + encodedQuery);
-            console.log('Preferencias del usuario actualizadas correctamente');
+            console.log('Configuracion del usuario cargada correctamente');
         } catch (error) {
-            console.error('Error al actualizar preferencias:', error);
+            console.error('Error al actualizar configuracion:', error);
         }
     });
 });
