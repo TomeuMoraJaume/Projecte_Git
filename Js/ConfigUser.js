@@ -7,7 +7,7 @@ window.addEventListener('DOMContentLoaded', () => {
     form.addEventListener('submit', async (e) => {
         //e.preventDefault();
 
-        const id_user = localStorage.getItem('id_user');
+        const id_user = localStorage.getItem('usuariActual');
         if (!id_user) {
             console.error('id_user no encontrado en localStorage');
             return;

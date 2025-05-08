@@ -22,7 +22,15 @@ function agafarInfo() {
 
 async function validarInformacio() {
     console.log("a3");
-    //const info = agafarInfo();
+    //const info = agafarI
+        nom_login,
+        contrasenya
+    };
+
+
+
+async function validarInformacio() {
+    console.log("a3");nfo();
     const nom_login = document.querySelector("#nomUsuari").value;
     const contrasenya = document.querySelector("#contrasenya").value;
 
@@ -42,7 +50,7 @@ async function validarInformacio() {
         } else {
             console.log("a6");
             //location.reload();
-        }
+        }3
     } catch (error) {
         console.log("a7");
         console.error(error);
