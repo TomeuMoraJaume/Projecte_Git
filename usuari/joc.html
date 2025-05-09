@@ -181,23 +181,24 @@
 
     <h2>Temps Restant</h2>
 
-    <form>
+    <form id="formJoc">
         <table>
             <tr>
-                <td><label for="temps">Temps:</label></td>
-                <td><input type="text" id="temps" value="60"></td>
+                <td><label for="temps">Temps restant:</label></td>
+                <td><span id="temps">-</span></td>
             </tr>
             <tr>
-                <td><label for="resultat">Resultat:</label></td>
-                <td><input type="text" id="resultat" value="0"></td>
+                <td><label for="resultat">Punts:</label></td>
+                <td><span id="resultat">0</span></td>
             </tr>
             <tr>
                 <td colspan="2" style="text-align: center;">
-                    <input type="submit" id="finalitzar"></input>
+                    <button type="submit" id="comencar">Començar Joc</button>
                 </td>
             </tr>
         </table>
     </form>
+    
     
 
     <script src="../Js/sopa.js"></script>
