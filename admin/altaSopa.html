@@ -32,203 +32,194 @@
     </form>
 
     <form action="../php/sopalletra.php" method="post" id="form1">
-      
+    <form id="form1">
         <label for="nomSopa">Nom Sopa de Lletres:</label>
         <input type="text" id="nomSopa" name="nomSopa"><br>
-    
-       
+
         <label>Nivell de Dificultat:</label><br>
-        <input type="radio" id="facil" name="dificultatSopa" value="Fácil">
+        <input type="radio" id="facil" name="dificultatSopa" value="1">
         <label>Fàcil</label><br>
-
-        <input type="radio" id="medio" name="dificultatSopa" value="Medio">
+        <input type="radio" id="medio" name="dificultatSopa" value="2">
         <label>Mitjà</label><br>
+        <input type="radio" id="dificil" name="dificultatSopa" value="3">
+        <label>Difícil</label><br><br>
 
-        <input type="radio" id="dificil" name="dificultatSopa" value="Fácil">
-        <label>Difícil</label><br>
-        <br>
-
-        
-       
-        <label for="paraula[]">Insereix les paraules:</label><br>     
-        <input name="paraula[]" type="text" placeholder="Paraula 1"><br>
-        <input name="paraula[]" type="text" placeholder="Paraula 2"><br>
-        <input name="paraula[]" type="text" placeholder="Paraula 3"><br>
-        <input name="paraula[]" type="text" placeholder="Paraula 4"><br>
-        <input name="paraula[]" type="text" placeholder="Paraula 5"><br>
-        <input name="paraula[]" type="text" placeholder="Paraula 6"><br>
-        <input name="paraula[]" type="text" placeholder="Paraula 7"><br>
-        <input name="paraula[]" type="text" placeholder="Paraula 8"><br>
-        <input name="paraula[]" type="text" placeholder="Paraula 9"><br>
+        <label for="paraula[]">Insereix les paraules:</label><br>
+        <input name="paraula[]" type="text" placeholder="Paraula 1">
+        <input name="paraula[]" type="text" placeholder="Paraula 2">
+        <input name="paraula[]" type="text" placeholder="Paraula 3">
+        <input name="paraula[]" type="text" placeholder="Paraula 4">
+        <input name="paraula[]" type="text" placeholder="Paraula 5">
+        <input name="paraula[]" type="text" placeholder="Paraula 6">
+        <input name="paraula[]" type="text" placeholder="Paraula 7">
+        <input name="paraula[]" type="text" placeholder="Paraula 8">
+        <input name="paraula[]" type="text" placeholder="Paraula 9">
         <input name="paraula[]" type="text" placeholder="Paraula 10"><br>
-        <br>
 
-       
-        <label>Lletres per col·locar:</label><br>       
-        <input type="button" value="A">
-        <input type="button" value="B">
-        <input type="button" value="C">
-        <input type="button" value="D">
-        <input type="button" value="E">
-        <input type="button" value="F">
-        <input type="button" value="G">
-        <input type="button" value="H">
-        <input type="button" value="I">
-        <input type="button" value="J">
-        <input type="button" value="K">
-        <input type="button" value="L">
-        <input type="button" value="M">
-        <input type="button" value="N">
-        <input type="button" value="O">
-        <input type="button" value="P">
-        <input type="button" value="Q">
-        <input type="button" value="R">
-        <input type="button" value="S">
-        <input type="button" value="T">
-        <input type="button" value="U">
-        <input type="button" value="V">
-        <input type="button" value="W">
-        <input type="button" value="X">
-        <input type="button" value="Y">
-        <input type="button" value="Z">
+        <label>Lletres per col·locar:</label><br>
+        <div class="letras-container">
+            <input type="button" value="A">
+            <input type="button" value="B">
+            <input type="button" value="C">
+            <input type="button" value="D">
+            <input type="button" value="E">
+            <input type="button" value="F">
+            <input type="button" value="G">
+            <input type="button" value="H">
+            <input type="button" value="I">
+            <input type="button" value="J">
+            <input type="button" value="K">
+            <input type="button" value="L">
+            <input type="button" value="M">
+            <input type="button" value="N">
+            <input type="button" value="O">
+            <input type="button" value="P">
+            <input type="button" value="Q">
+            <input type="button" value="R">
+            <input type="button" value="S">
+            <input type="button" value="T">
+            <input type="button" value="U">
+            <input type="button" value="V">
+            <input type="button" value="W">
+            <input type="button" value="X">
+            <input type="button" value="Y">
+            <input type="button" value="Z">
+        </div><br><br>
         
-        <br>
-        <br>
-        
-    </form>
+  
 
     
-    <table class="TaulaJoc">
+        <table class="TaulaJoc" id="taula">
 
-        <tr>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-        </tr>
-        <tr>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-        </tr>
-        <tr>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-        </tr>
-        <tr>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-        </tr>
-        <tr>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-        </tr>
-        <tr>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-        </tr>
-        <tr>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-        </tr>
-        <tr>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-        </tr>
-        <tr>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-        </tr>
-        <tr>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td> 
-            <td>X</td> 
-            <td>X</td> 
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-        </tr>
-    </table><br>
-    <form action="processar_info.php" method="post">
-    <input type="button" value="Emplenar" form="form1">
-    <input type="reset" form="form1" value="Restableix">
-    <input type="submit" form="form1" value="Desa">
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table><br>
+        <input type="button" value="Emplenar" form="form1" onclick="emplenarTaula()">
+        <input type="reset" form="form1" value="Restableix">
+        <input type="submit" form="form1" value="Desa">
     
-</form>    
+    </form>    
     
-    
+    <script src="../Js/rellenarSopa.js"></script>
+
 <footer>Xarxes Socials:<br>
     <a href="https://instagram.com">
         <img src="../imagenes/instagram.png" height="50" width="90" alt="404 not found">
@@ -242,6 +233,9 @@
     Correo electrónico:
     <a href="mailto:correu@exemple"><p>correu@exemple</p></a>
 </footer>
+
+
+<script src="../Js/nomUsuari.js"></script>
 
 </body>
 </html>

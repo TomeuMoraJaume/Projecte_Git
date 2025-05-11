@@ -34,14 +34,9 @@
             <input type="button" name="logout" id="logout" value="Logout">
         </form>
         
-    <form action="../php/consulta.php" method="post">
+    <form id="SelectSopaDeLetras">
         <label for="BSopa">Tria una sopa de lletres:</label>
-        <select id="BSopa" name="BSopa">
-        <option>Sopa 1</option>
-        <option>Sopa 2</option>
-        <option>Sopa 3</option>
-        <option>Sopa 4</option>
-        <option>Sopa 5</option>
+        <select id="sopaSelect" name="BSopa">
         </select>
         <input type="submit" value="Consulta">
     </form><br>
@@ -169,17 +164,7 @@
         </tr>
     </table>
     
-    <ul>
-        <li>Paraula 1</li>
-        <li>Paraula 2</li>
-        <li>Paraula 3</li>
-        <li>Paraula 4</li>
-        <li>Paraula 5</li>
-        <li>Paraula 6</li>
-        <li>Paraula 7</li>
-        <li>Paraula 8</li>
-        <li>Paraula 9</li>
-        <li>Paraula 10</li>
+    <ul id="listP">
     </ul>
     
     <footer>Xarxes Socials:<br>
@@ -195,6 +180,11 @@
         Correo electrónico:
         <a href="mailto:correu@exemple"><p>correu@exemple</p></a>
     </footer>
+
+
+
+    <script src="../Js/ConsultaSopa.js"></script>
+    <script src="../Js/nomUsuari.js"></script>
 
 </body>
 </html>

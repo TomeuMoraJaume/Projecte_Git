@@ -28,7 +28,7 @@
         </ul>
 
 
-        <form action="processar_info.php" method="post">
+        <form>
             <input type="button" name="logout" id="logout" value="Logout">
         </form>
         
@@ -40,25 +40,16 @@
     
     <h2>Selecciona una Sopa de Lletres</h2>
 
-    <form action="../php/joc.php" method="POST">
+    <form id="SelectSopaDeLetras">
         <label for="sopaSelect">Sopa de lletres:</label>
-        <select id="sopaSelect" name="sopaSelect">
-            <option >Sopa 1</option>
-            <option >Sopa 2</option>
-            <option >Sopa 3</option>
-            <option >Sopa 3</option>
-            <option >Sopa 3</option>
-        </select>
+        <select id="sopaSelect" name="sopaSelect"></select>
+
         <input type="submit"></input>
     </form>
     
     <h2>Paraules a Trobar</h2>
     
-    <ul>
-
-        <li>Paraula1</li>
-        <li>Paraula2</li>
-        <li>Paraula3</li>
+    <ul id="listP">
 
     </ul>
     
@@ -190,25 +181,28 @@
 
     <h2>Temps Restant</h2>
 
-    <form>
+    <form id="formJoc">
         <table>
             <tr>
-                <td><label for="temps">Temps:</label></td>
-                <td><input type="text" id="temps" value="60"></td>
+                <td><label for="temps">Temps restant:</label></td>
+                <td><span id="temps">-</span></td>
             </tr>
             <tr>
-                <td><label for="resultat">Resultat:</label></td>
-                <td><input type="text" id="resultat" value="0"></td>
+                <td><label for="resultat">Punts:</label></td>
+                <td><span id="resultat">0</span></td>
             </tr>
             <tr>
                 <td colspan="2" style="text-align: center;">
-                    <input type="submit" id="finalitzar"></input>
+                    <button type="submit" id="comencar">Començar Joc</button>
                 </td>
             </tr>
         </table>
     </form>
     
+    
 
+    <script src="../Js/sopa.js"></script>
+    <script src="../Js/nomUsuari.js"></script>
 
        
     <footer>

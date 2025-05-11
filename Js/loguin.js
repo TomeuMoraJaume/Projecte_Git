@@ -22,11 +22,19 @@ function agafarInfo() {
 
 async function validarInformacio() {
     console.log("a3");
-    //const info = agafarInfo();
+    //const info = agafarI
+        nom_login,
+        contrasenya
+    };
+
+
+
+async function validarInformacio() {
+    console.log("a3");nfo();
     const nom_login = document.querySelector("#nomUsuari").value;
     const contrasenya = document.querySelector("#contrasenya").value;
 
-    const query = `Select id from Usuari where nom_login = '${nom_login}' and contrasenya = '${contrasenya}'`;
+    const query = `Select nom_usuari from Usuari where nom_login = '${nom_login}' and contrasenya = '${contrasenya}'`;
     console.log(query);
 
     try {
@@ -34,16 +42,15 @@ async function validarInformacio() {
         const api = await fetch("http://localhost:3000/daw/"+ encodeURIComponent(query));
         console.log("b1")
         const data = await api.json();
-        array_rebuda_id = data.data.map(r=>r.id);
-        if (array_rebuda_id.length > 0) {
+        array_rebuda_nom = data.data.map(r=>r.id);
+        if (array_rebuda_nom.length > 0) {
             console.log("a5");
-            ids = array_rebuda_id[0];
-            localStorage.setItem("usuariActual", ids);
+            localStorage.setItem("usuariActual", nom_login);
             //window.location.href = "altaSopa.html";
         } else {
             console.log("a6");
             //location.reload();
-        }
+        }3
     } catch (error) {
         console.log("a7");
         console.error(error);

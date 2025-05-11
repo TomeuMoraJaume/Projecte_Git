@@ -30,15 +30,12 @@
         <li><a href="consultaMillors.html">Consulta de millors resultats</a></li>
         <li><a href="ajudaAdmin.html">Ajuda</a></li>
     </ul>
-    <form action="processar_info.php" method="post">
+    <form >
         <input type="button" name="logout" id="logout" value="Logout">
     </form>
-    <form action="../php/baixa.php" method="post">
+    <form id="Borrar">
         <label for="nomUsuaris">Nombre de usuario</label>
         <select id="nomUsuaris" name="nomUsuaris">
-            <option>usuari1</option>
-            <option>usuari2</option>
-            <option>usuari3</option>
         </select><br>
         <input type="submit" value="Borrar">
     </form><br>
@@ -57,6 +54,9 @@
         Correo electrónico:
         <a href="mailto:correu@exemple"><p>correu@exemple</p></a>
     </footer>
+
+    <script src="../Js/nomUsuari.js"></script>
+    <script src="../Js/BorrarUser.js"></script>
 
 </body>
 </html>

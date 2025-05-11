@@ -5,9 +5,9 @@ window.addEventListener('DOMContentLoaded', () => {
 
     const form = document.getElementById('formConfig');
     form.addEventListener('submit', async (e) => {
-        //e.preventDefault();
+        e.preventDefault();
 
-        const id_user = localStorage.getItem('id_user');
+        const id_user = parseInt(localStorage.getItem('usuariActual'));
         if (!id_user) {
             console.error('id_user no encontrado en localStorage');
             return;
@@ -17,19 +17,15 @@ window.addEventListener('DOMContentLoaded', () => {
         const id_color_boto = document.getElementById('colorBotons').value;
         const id_idioma = document.getElementById('idioma').value;
 
-        const updateQuery = `
-            UPDATE Usuari 
-            SET fk_id_color_boto = ${id_color_boto}, 
-                fk_id_color_taula = ${id_color_taula}, 
-                fk_id_ideoma = ${id_idioma} 
-            WHERE id = ${id_user}
-        `;
-
+        const updateQuery = `UPDATE Usuari SET fk_id_color_boto = '${id_color_boto}' , fk_id_color_taula = '${id_color_taula}', fk_id_idioma = '${id_idioma}' WHERE id = '${id_user}'`;
+        console.log(updateQuery);
         try {
-            await fetch("http://localhost:3000/daw/" + encodeURIComponent(updateQuery));
-            console.log('Preferencias del usuario actualizadas correctamente');
+            const encodedQuery = encodeURIComponent(updateQuery);
+            console.log("Encoded query URL:", encodedQuery);
+            await fetch("http://localhost:3000/daw/" + encodedQuery);
+            console.log('Configuracion del usuario cargada correctamente');
         } catch (error) {
-            console.error('Error al actualizar preferencias:', error);
+            console.error('Error al actualizar configuracion:', error);
         }
     });
 });

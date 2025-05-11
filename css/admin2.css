@@ -63,3 +63,19 @@ ol ol {
     width: 50px;
     height: 50px;
 }
+.letras-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    max-width: 30rem; /* Puedes ajustar el ancho máximo */
+    margin-bottom: 1rem;
+}
+
+.letras-container input[type="button"] {
+    width: 2.5rem;
+    height: 2.5rem;
+    text-align: center;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
