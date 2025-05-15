@@ -99,7 +99,7 @@ function emplenarTaula(seed) {
     for (const fila of files) {
         const tds = fila.getElementsByTagName("td");
         for (const td of tds) {
-            if (td.innerText.trim() === "" || td.innerText === "X") {
+            if (td.innerText.trim() === "" || td.innerText === "") {
                 const randomIndex = Math.floor(rand() * alfabet.length);
                 td.innerText = alfabet[randomIndex];
             }
