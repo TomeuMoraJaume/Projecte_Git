@@ -25,7 +25,7 @@ ul li a:hover {
     background-color: #c0392b;
 }
 
-#TaulaJoc {
+.TaulaJoc {
     width: 100%;
     margin: 20px auto;
     display: grid;
@@ -34,14 +34,14 @@ ul li a:hover {
     text-align: center;
 }
 
-#TaulaJoc td {
+.TaulaJoc td {
     padding: 1rem;
     border: 1px solid #333;
     background-color: #f4f4f4;
     font-weight: bold;
 }
 
-#TaulaJoc td:hover {
+.TaulaJoc td:hover {
     background-color: #8dff3b;
 }
 

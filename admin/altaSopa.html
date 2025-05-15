@@ -45,16 +45,16 @@
         <label>Difícil</label><br><br>
 
         <label for="paraula[]">Insereix les paraules:</label><br>
-        <input name="paraula[]" type="text" placeholder="Paraula 1">
-        <input name="paraula[]" type="text" placeholder="Paraula 2">
-        <input name="paraula[]" type="text" placeholder="Paraula 3">
-        <input name="paraula[]" type="text" placeholder="Paraula 4">
-        <input name="paraula[]" type="text" placeholder="Paraula 5">
-        <input name="paraula[]" type="text" placeholder="Paraula 6">
-        <input name="paraula[]" type="text" placeholder="Paraula 7">
-        <input name="paraula[]" type="text" placeholder="Paraula 8">
-        <input name="paraula[]" type="text" placeholder="Paraula 9">
-        <input name="paraula[]" type="text" placeholder="Paraula 10"><br>
+        <input name="paraula[]" type="text" placeholder="Paraula 1" maxlength="10">
+        <input name="paraula[]" type="text" placeholder="Paraula 2" maxlength="10">
+        <input name="paraula[]" type="text" placeholder="Paraula 3" maxlength="10">
+        <input name="paraula[]" type="text" placeholder="Paraula 4" maxlength="10">
+        <input name="paraula[]" type="text" placeholder="Paraula 5" maxlength="10">
+        <input name="paraula[]" type="text" placeholder="Paraula 6" maxlength="10">
+        <input name="paraula[]" type="text" placeholder="Paraula 7" maxlength="10">
+        <input name="paraula[]" type="text" placeholder="Paraula 8" maxlength="10">
+        <input name="paraula[]" type="text" placeholder="Paraula 9" maxlength="10">
+        <input name="paraula[]" type="text" placeholder="Paraula 10" maxlength="10"><br>
 
         <label>Lletres per col·locar:</label><br>
         <div class="letras-container">
@@ -212,9 +212,10 @@
                 <td></td>
             </tr>
         </table><br>
-        <input type="button" value="Emplenar" form="form1" onclick="emplenarTaula()">
+        <input type="button" class="btn-paraules" value="Emplenar_amb_paraules">
         <input type="reset" form="form1" value="Restableix">
         <input type="submit" form="form1" value="Desa">
+
     
     </form>    
     

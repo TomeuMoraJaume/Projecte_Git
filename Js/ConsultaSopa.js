@@ -3,9 +3,11 @@ window.addEventListener('DOMContentLoaded', () => {
 
     const form = document.getElementById('SelectSopaDeLetras');
     form.addEventListener('submit', (event) => {
-        event.preventDefault();
-        cargarLlistaParaules();
-    });        
+    event.preventDefault();
+    cargarLlistaParaules();
+    cargarSopaLletres();
+});
+      
     
 });
 
@@ -49,6 +51,52 @@ async function cargarLlistaParaules() {
         console.error('Error al cargar las palabras:', err);
     }
 }
+
+async function cargarSopaLletres() {
+    let id_sopa = document.getElementById('sopaSelect').value;
+    const querySopa = `
+        SELECT Lletra.nom AS lletra, Esta.fila, Esta.columna
+        FROM Esta
+        JOIN Lletra ON Esta.fk_id_lletra = Lletra.id
+        WHERE Esta.fk_id_sopa = '${id_sopa}'
+    `;
+
+    try {
+        const res = await fetch("http://localhost:3000/daw/" + encodeURIComponent(querySopa));
+        const data = await res.json();
+
+        const taula = Array.from({ length: 10 }, () => Array(10).fill(""));
+
+        data.data.forEach(({ lletra, fila, columna }) => {
+            if (fila < 10 && columna < 10) {
+                taula[columna][fila] = lletra;
+            }
+        });
+
+        pintarTaula(taula);
+
+    } catch (err) {
+        console.error('Error al cargar sopa de letras:', err);
+    }
+}
+
+
+function pintarTaula(matriz) {
+    const tabla = document.querySelector('.TaulaJoc tbody');
+    tabla.innerHTML = ''; // Limpiar contenido previo
+
+    for (let fila of matriz) {
+        const tr = document.createElement('tr');
+        for (let lletra of fila) {
+            const td = document.createElement('td');
+            td.textContent = lletra || 'X';
+            tr.appendChild(td);
+        }
+        tabla.appendChild(tr);
+    }
+}
+
+
 
 
 

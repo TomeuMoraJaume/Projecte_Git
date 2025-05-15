@@ -52,6 +52,9 @@ async function eliminarSopasSeleccionadas() {
     try {
         for (const id of ids) {
 
+            const queryParaula = `DELETE FROM Paraula WHERE fk_id_sopa = ${id}`;
+            const encodedQueryParaula = encodeURIComponent(queryParaula);
+            await fetch(`http://localhost:3000/daw/${encodedQueryParaula}`);
 
             const queryPartida = `DELETE FROM Partida WHERE fk_id_sopa = ${id}`;
             const encodedQueryPartida = encodeURIComponent(queryPartida);
